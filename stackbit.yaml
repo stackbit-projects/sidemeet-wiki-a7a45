@@ -1,0 +1,57 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  page_1:
+    type: page
+    label: Page 1
+    match:
+      - _posts/2018-12-17-blog-refactoring-v2.1.0.md
+      - _posts/2018-12-17-first-post.md
+      - _posts/2020-1-7-version-2-5.md
+      - wiki/main_page.md
+    fields:
+      - type: boolean
+        name: published
+        label: Published
+      - type: string
+        name: redirect_from
+        label: Redirect From
+  wiki:
+    type: page
+    label: Wiki
+    folder: wiki
+    match:
+      - Demo.md
+      - changelogs.md
+      - customize.md
+      - examples.md
+      - press.md
+      - theme-default.md
+      - theme-github.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+  wiki_1:
+    type: page
+    label: Wiki 1
+    folder: wiki
+    match:
+      - theme-lux.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+  wiki_2:
+    type: page
+    label: Wiki 2
+    folder: wiki
+    match:
+      - theme-united.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
